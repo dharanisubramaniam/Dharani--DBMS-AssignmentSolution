@@ -44,7 +44,7 @@ select min(price) from price where Bus_type='Sleeper';
 select passenger_name from passenger where passenger_name like 'S%';
 
 
-select pa.passenger_name,pa.boarding_city,pa.destination_city,pd.price from passenger pa
+select pa.passenger_name,pa.boarding_city,pa.destination_city,pd.bus_type,pd.price from passenger pa
 inner join passenger_details pd on pa.bus_type=pd.bus_type and pa.distance=pd.distance;
 
 
