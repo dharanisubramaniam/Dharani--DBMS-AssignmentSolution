@@ -34,7 +34,10 @@ select * from passenger;
 
 select * from price;
 
+rename table price to passenger_details;
+
 truncate table passenger;
+
 
 select Gender,count(Gender) from passenger where distance>600 group by Gender;
 
